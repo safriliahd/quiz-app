@@ -1,0 +1,26 @@
+@import "../../styles/vars.scss";
+
+#logOut{
+    margin: auto;
+    p{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    button{
+        justify-content: end;
+        padding: 10px 20px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: $md-dark;
+        color: $dark;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: $dark;
+          color: $bg;
+        }
+    }
+}

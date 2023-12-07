@@ -1,0 +1,228 @@
+@import "../../styles/vars.scss";
+
+// .quiz-container{
+//     width: 700px;
+//     height: 500px;
+//     background: linear-gradient(0deg, $dark 0.03%, $md-dark);
+//     border-radius: 25px;
+//     margin-top: 100px;
+//     padding: 30px 60px;
+//     box-sizing: border-box;
+
+//     .question-header{
+//         margin-top: 15px;
+
+
+//         .active-question-no{
+//             font-size: 32px;
+//             font-weight: bold;
+//             color: $bg;
+//         }
+    
+//         .total-question{
+//             font-size: 16px;
+//             font-weight: 500;
+//             color: $bg-accent;
+//         }
+
+//         h2{
+//             display: flex;
+//             justify-content: flex-start;
+//             font-size: 20px;
+//             font-weight: 500;
+//             margin: 15px 0;
+//         }
+//     }
+
+   
+
+//     ul {
+//         margin-top: 20px;
+//         margin-left: -40px;
+//         display: flex;
+//         justify-content: flex-end;
+        
+//         li{
+//             text-decoration: none;
+//             list-style: none;
+//             background-color: $dark;
+//             color: $bg;
+//             font-size: 16px;
+//             border: 1px solid $bg;
+//             border-radius: 16px;
+//             padding: 11px;
+//             margin-top: 15px;
+//             cursor: pointer;
+//         }
+
+//         li:hover{
+//             background: $md-dark;
+//             columns: $dark;
+//         }
+
+//         .selectedAnswer{
+//             background-color: $bg;
+//             border: aqua;
+//             color: $dark;
+//         }
+//     }
+
+//     .footer{
+//         display: flex;
+//         justify-content: flex-end;
+//     }
+
+//     button{
+//         background: linear-gradient(0deg, $md-dark 0.03%, $foreground);
+//         border-radius: 9px;
+//         font-size: 18px;
+//         font-weight: bold;
+//         color: $dark;
+//         padding: 10px 42px;
+//         outline: none;
+//         border: none;
+//         margin-top: 15px;
+//         cursor: pointer;
+
+//         &:disabled {
+//             background: $bg-accent;
+//             color: $disabled;
+//             cursor: not-allowed;
+//         }
+//     }
+
+//     .result{
+//         text-align: center;
+
+//         h3{
+//             font-size: 24px;
+//             letter-spacing: 1.4px;
+//             text-align: center;
+//             color: $bg-accent;
+//         }
+
+//         p {
+//             font-size: 16px;
+//             font-weight: 500;
+
+//             span{
+//                 color: $bg-accent;
+//                 font-size: 22px;
+//             }
+//         }
+
+
+//     }
+// }
+
+.quiz-container {
+    width: 800px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $bg-accent;
+    color: $dark;
+    box-shadow: 10px 10px 10px;
+    margin-top: 100px;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    
+  
+    .question-header {
+      width: 50%;
+      text-align: left;
+      padding-top: 40px;
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .active-question-no {
+        color: $dark;
+        font-size: 20px;
+
+      }
+      .total-question {
+        color: $dark;
+        font-size: 14px;
+      }
+      p {
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+    }
+
+    .choice-question{
+        width: 40%;
+        list-style: none;
+        padding: 0;
+        text-align: left;
+        padding-top: 40px;
+        
+
+        ul {
+            padding: 0;
+
+            li {
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+              text-decoration: none;
+              list-style: none;
+              background-color: $bg-accent;
+              color: $dark;
+              font-size: 16px;
+              border: 1px solid $dark;
+              border-radius: 16px;
+              padding: 11px;
+              margin-top: 15px;
+      
+              &:hover {
+                background-color: $md-dark;
+                color: $bg;
+              }
+            }
+          }
+    }
+  
+  
+    .result-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      
+      .result {
+        width: 50%;
+        h3 {
+          color: $dark;
+          margin-bottom: 15px;
+          font-size: 24px;
+        }
+        p {
+          font-size: 20px;
+          margin-bottom: 10px;
+          span {
+            font-weight: bold;
+            color: $md-dark;
+          }
+        }
+        button {
+          padding: 10px 20px;
+          margin-top: 10px;
+          border: none;
+          border-radius: 5px;
+          background-color: $md-dark;
+          color: $dark;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          &:hover {
+            background-color: $dark;
+            color: $bg;
+          }
+        }
+      }
+    }
+  }
+
+  

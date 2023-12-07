@@ -1,0 +1,27 @@
+@import "./vars.scss";
+
+body{
+    font-family: monospace;
+    background-color: $bg;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 30px;
+    height: 100vh;
+    background: linear-gradient(300deg, $dark 0.03%, $md-dark);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:conic-gradient(#0000 10%,#F4F4F4);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    animation:s3 1s infinite linear;
+  }
+  @keyframes s3 {to{transform: rotate(1turn)}}
